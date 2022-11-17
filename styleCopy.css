@@ -1,0 +1,178 @@
+body{
+  background-color: hsl(216, 12%, 8%);
+  color:white;
+  font-family: 'Overpass', sans-serif;
+}
+
+section{
+  margin : 2rem;
+}
+
+#heading{
+
+  font-weight: bold;
+      font-size: 25px;
+
+}
+#desc{
+    font-weight: 400 ;
+    color:hsl(216, 12%, 54%);
+}
+.center-background{
+  background: #273039;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    padding: 0.7rem;
+    display: flex;
+justify-content: center;
+  align-items: center;
+
+}
+.rating-card{
+
+}
+#ratingCard{
+  display: flex;
+    justify-content: center;/*center hoz*/
+    align-items: center; /*center vertically*/
+height: 100vh;
+
+}
+#rating{
+  display: flex;
+    justify-content: space-between;/*center hoz*/
+    align-items: center;
+}
+.rating-number{
+  display: inline-block;
+  color:hsl(216, 12%, 54%);
+}
+.btn {
+
+  border-radius: 28px;
+
+  color: #ffffff;
+  font-size: 20px;
+  background: hsl(25, 97%, 53%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: flex;
+    justify-content: center;/*center hoz*/
+    align-items: center;
+}
+.selected-rating-background-color{
+
+
+  background: hsl(25, 97%, 53%);
+}
+
+.selected-rating-color{
+    color: #ffffff;
+}
+.rating-number:hover{
+cursor: pointer;
+}
+
+
+/*3d Flip CSS */
+
+/* .card-content{
+    text-align:center;
+    position:relative;
+    padding:5rem;
+    background-color:pink;
+   transition:transform 3s;
+   transform-style:preserve-3d;
+
+} */
+.card:hover .card-content{
+    /* transform:rotateY(180deg); */
+
+}
+.rotate-on-submit{
+  transform:rotateY(180deg);
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+.rating-card,.after-rating-submit{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+  transition: transform 3s;
+ transform:translateZ(7rem);
+
+  backface-visibility:hidden;
+}
+.card-content{
+    position:relative;
+  text-align:center;
+    padding:5rem;
+      background-color:#212832;
+    transition: transform 3s;
+ transform-style:preserve-3d;
+ height: 300px;
+ border-radius: 20px;
+  /* transform:translateZ(5rem); */
+}
+.after-rating-submit{
+  transform: rotateY(180deg);
+  top:30px;
+   /* transform:translateZ(10rem); */
+}
+.card__title{
+font-size:2em;
+    transform:translateZ(5rem);
+}
+.center-background,.one,.center-background,.rating-number,.two,.three,.four,.five,.star,.center-background{
+     transform:translateZ(5rem);
+}
+.card__body{
+     transform:translateZ(5rem);
+}
+.after-rating-submit{
+     transform:rotateY(180deg);
+     text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+     /* background-color:lightgreen; */
+}
+.card{
+    width:400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.thank-you{
+  font-size: xx-large;
+  transform: translateZ(5rem);
+  }
+
+  .thank-you-desc{
+    font-weight: 400 ;
+    color:hsl(216, 12%, 54%);
+    transform: translateZ(5rem);
+  }
+
+.score{
+  border-radius: 25px;
+  background-color: #273039;
+  color:hsl(25, 97%, 53%);
+ /* border: 2px solid #73AD21; */
+ padding: 10px;
+ width: 200px;
+ height: 20px;
+transform: translateZ(5rem);
+}
+img{
+   transform: translateZ(5rem);
+}
